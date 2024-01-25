@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kits.kitsclick">
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.hardware.location.gps"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kitsclick">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity android:name="com.paytm.pgsdk.PaytmPGActivity"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:configChanges="keyboardHidden|orientation|keyboard"-->
+<!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+<!--            tools:replace="android:theme" />-->
+        <activity
+            android:name=".SignUp_Activity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Forgotpassword_Activity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Agency_detailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AgentNext_Activity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Agent_Next2_Activity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activitykyc_details"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TabActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".OtpverifyActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MobileRechargeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".DTHRechargeActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Mobilerechargedata"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Pinactivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ConfrompinActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".NotificationActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Reportactivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".BIllPayment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Catagoryactivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".SuccessfulActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MinistatementActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Ministatement_seconed"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Deviceadd_activity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Ministatement_thirdactivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".NotsupportedActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Blanceenquiry"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Blanceenquiryseconed"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PayinActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".AadheratmActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PayinofflineActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Creditdebit_Activity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Creditcarddebitcard_Activity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MinstatementActivitysecomed"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".BalanceEnquiryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".BalanceenquryThird"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Ministatementfirst"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Ministatement_seconedd"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Ministatement_thirdactivityy"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Ministatement_seconedAdher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MinistatementActivityAdher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Ministatement_thirdactivityadher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BalanceenquryThirdadher"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Deviceadd_activitybalance"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Balanceenquary_seconedAdher"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Balance_thirdactivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Deviceaddministatement_activity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ReporttabActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".UpiActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

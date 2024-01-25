@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="0dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/lv"
+                            android:background="@color/carview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/Img"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_marginLeft="20sp"
+                                    android:background="@drawable/ic_arrow_circle_left" />
+                                <!--                    android:background="@drawable/dth"-->
+                                <TextView
+                                    android:id="@+id/tv_nmaebrand"
+                                    android:layout_marginLeft="10sp"
+                                    android:text="Add Payment"
+                                    android:layout_marginTop="5sp"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:layout_alignBaseline="@+id/Img"
+                                    android:layout_toRightOf="@+id/Img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:id="@+id/balance"
+                                    android:layout_below="@+id/tv_nmaebrand"
+                                    android:text="Wallet: 22.53"
+                                    android:layout_marginTop="2sp"
+                                    android:textColor="@color/white"
+                                    android:drawableLeft="@drawable/rupeess"
+                                    android:textSize="15sp"
+                                    android:layout_alignBaseline="@+id/Img"
+                                    android:layout_toRightOf="@+id/Img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <ImageView
+                                    android:id="@+id/Img3"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginRight="80sp"
+                                    android:background="@drawable/ic_print_black_48dp"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"/>
+
+                                <ImageView
+                                    android:id="@+id/Img2"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginRight="20sp"
+                                    android:background="@drawable/ic_cancel_second"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/llv"
+                            android:layout_marginTop="20sp"
+                            android:layout_below="@+id/lv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <RadioGroup
+                                    android:id="@+id/upi_radioGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <RadioButton
+                                        android:id="@+id/ck_ID_upi"
+                                        android:text="UPI"
+                                        android:layout_alignBaseline="@+id/tv_name"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        />
+                                </RadioGroup>
+                                <ImageView
+                                    android:id="@+id/Img4"
+                                    android:layout_alignBaseline="@+id/upi_radioGroup"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginRight="20sp"
+                                    android:background="@drawable/upi"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"/>
+                                <View
+                                    android:id="@+id/upi_view"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_below="@+id/upi_radioGroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/blackk" />
+
+                                <RadioGroup
+                                    android:layout_marginTop="10sp"
+                                    android:layout_below="@+id/upi_view"
+                                    android:id="@+id/wallets_radioGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <RadioButton
+                                        android:id="@+id/ck_ID_wallets"
+                                        android:text="Wallets"
+                                        android:layout_alignBaseline="@+id/tv_name"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        />
+                                </RadioGroup>
+                                <ImageView
+                                    android:layout_alignBaseline="@+id/wallets_radioGroup"
+                                    android:layout_marginTop="30sp"
+                                    android:layout_below="@+id/Img4"
+                                    android:id="@+id/Img5"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginRight="20sp"
+                                    android:background="@drawable/wallets"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"/>
+
+                                <View
+                                    android:id="@+id/wallet_view"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_below="@+id/wallets_radioGroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/blackk" />
+
+                                <RadioGroup
+                                    android:layout_marginTop="10sp"
+                                    android:layout_below="@+id/wallet_view"
+                                    android:id="@+id/cradit_radioGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <RadioButton
+                                        android:id="@+id/ck_ID_cradit"
+                                        android:text="Credit/Debit/ATM Card"
+                                        android:layout_alignBaseline="@+id/tv_name"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        />
+                                </RadioGroup>
+                                <TextView
+                                    android:id="@+id/tv_name"
+                                    android:layout_below="@+id/cradit_radioGroup"
+                                    android:text="Get 64 off by using 64 Supercoins with kotak 811 Debit and slice card."
+                                    android:layout_marginTop="5sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="30sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <View
+                                    android:id="@+id/cradit_view"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_below="@+id/tv_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/blackk" />
+                                <RadioGroup
+                                    android:layout_marginTop="10sp"
+                                    android:layout_below="@+id/cradit_view"
+                                    android:id="@+id/netbankin_radioGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <RadioButton
+                                        android:id="@+id/ck_ID_netbanking"
+                                        android:text="Net Banking"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        />
+                                </RadioGroup>
+                                <View
+                                    android:id="@+id/netbanking_view"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_below="@+id/netbankin_radioGroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/blackk" />
+                                <TextView
+                                    android:id="@+id/tv_cash"
+                                    android:drawableLeft="@drawable/ic_lock_black_48dp"
+                                    android:layout_below="@+id/netbanking_view"
+                                    android:text="Cash on Delivery"
+                                    android:layout_marginTop="5sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:id="@+id/tv_cash_text"
+                                    android:layout_below="@+id/tv_cash"
+                                    android:text="Pay only 319 as advance and balance amount as cash on delivery"
+                                    android:layout_marginTop="15sp"
+                                    android:textColor="@color/blackk"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="20sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <Button
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_below="@+id/tv_cash_text"
+                                    android:layout_marginRight="150sp"
+                                    android:layout_marginLeft="50sp"
+                                    android:layout_marginBottom="5sp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="20sp"
+                                    android:id="@+id/paynow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:textColor="#ffffff"
+                                    app:backgroundTint="@null"
+                                    android:background="@drawable/square"
+                                    android:text="Pay Now" />
+                                <View
+                                    android:id="@+id/paynow_view"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_below="@+id/paynow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/blackk" />
+
+                                <RadioGroup
+                                    android:layout_marginTop="10sp"
+                                    android:layout_below="@+id/paynow_view"
+                                    android:id="@+id/emi_radioGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <RadioButton
+                                        android:id="@+id/ck_ID_emi"
+                                        android:text="EMI (Easy Installments)"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        />
+                                </RadioGroup>
+                                <TextView
+                                    android:id="@+id/tv_emi"
+                                    android:layout_marginTop="20sp"
+                                    android:layout_below="@+id/paynow_view"
+                                    android:layout_alignParentEnd="true"
+                                    android:drawableRight="@drawable/ic_help_black_48dp"
+                                    android:layout_alignBaseline="@+id/emi_radioGroup"
+                                    android:text="Unavailable"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginRight="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <View
+                                    android:id="@+id/emi_view"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_below="@+id/tv_emi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/blackk" />
+                                <ImageView
+                                    android:layout_alignBaseline="@+id/wallets_radioGroup"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_below="@+id/emi_view"
+                                    android:id="@+id/Img6"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginRight="10sp"
+                                    android:background="@drawable/ic_baseline_add_24"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_gift"
+                                    android:layout_marginTop="15sp"
+                                    android:layout_below="@+id/emi_view"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignBaseline="@+id/Img6"
+                                    android:text="Gift Card"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="50sp"
+                                    android:layout_marginRight="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <View
+                                    android:id="@+id/gift_view"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_below="@+id/tv_gift"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/blackk" />
+
+                                <TextView
+                                    android:id="@+id/tv_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/gift_view"
+                                    android:layout_marginLeft="20sp"
+                                    android:layout_marginTop="15sp"
+                                    android:text="PRICE DETAILS"
+                                    android:textColor="@color/blackk"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_payment"
+                                    android:layout_below="@+id/tv_price"
+                                    android:text="100% Safe and Secure Payments"
+                                    android:layout_marginTop="15sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="80sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_p"
+                    android:text="648"
+                    android:layout_marginTop="15sp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_pri"
+                    android:layout_below="@+id/tv_p"
+                    android:text="View Price Details"
+                    android:layout_marginTop="5sp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:layout_alignBaseline="@+id/tv_pri"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginLeft="200sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20sp"
+                    android:id="@+id/contatue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/orange_sqare"
+                    android:text="CONTINUE" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

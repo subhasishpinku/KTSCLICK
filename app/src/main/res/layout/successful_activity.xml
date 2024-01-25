@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="1dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:id="@+id/rrv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/lv"
+                    android:background="@color/carview"
+                    android:layout_width="match_parent"
+                    android:layout_height="300sp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/Img"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="20sp"
+                            android:background="@drawable/ic_cancel"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"/>
+                        <ImageView
+                            android:id="@+id/Img2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginRight="20sp"
+                            android:background="@drawable/ic_alerts"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"/>
+                        <LinearLayout
+                            android:layout_below="@id/Img"
+                            android:orientation="vertical"
+                            android:background="@color/carview"
+                            android:layout_width="match_parent"
+                            android:layout_height="200sp">
+                            <ImageView
+                                android:layout_marginTop="60sp"
+                                android:background="@drawable/ic_check_circle"
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                />
+                            <TextView
+                                android:id="@+id/text_sucss"
+                                android:layout_marginTop="10sp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Recharge successful"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp"/>
+
+                            <TextView
+                                android:id="@+id/text_id"
+                                android:layout_marginTop="10sp"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Your jio prepaid was successfull recharged"
+                                android:textColor="@android:color/white"
+                                android:textSize="15dp"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="100sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_below="@+id/lv"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="5sp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PAYMENT SUMMARY"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp"/>
+                    <View
+                        android:layout_marginTop="10sp"
+                        android:layout_below="@+id/linearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/blackk" />
+                    <RelativeLayout
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/imv_wallet"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="20sp"
+                            android:background="@drawable/ic_wallet"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"/>
+                        <TextView
+                            android:id="@+id/tv_paid_us_wal"
+                            android:layout_marginTop="10sp"
+                            android:layout_alignBaseline="@+id/imv_wallet"
+                            android:layout_toRightOf="@id/imv_wallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Paid using wallet"
+                            android:drawableLeft="@drawable/ic_donee"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:id="@+id/tv_bal"
+                            android:layout_marginTop="10sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBaseline="@+id/tv_paid_us_wal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="399.0"
+                            android:layout_marginRight="20sp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp"/>
+                        <TextView
+                            android:id="@+id/tv_update_bal"
+                            android:layout_marginTop="10sp"
+                            android:layout_below="@id/tv_paid_us_wal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Update wallet balance"
+                            android:layout_toRightOf="@id/imv_wallet"
+                            android:layout_marginLeft="40sp"
+                            android:textSize="15dp"/>
+                        <View
+                            android:id="@+id/view_bar"
+                            android:layout_marginTop="10sp"
+                            android:layout_below="@+id/tv_update_bal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/blackk" />
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_marginTop="10sp"
+                            android:layout_below="@+id/view_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+91 7001690271"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_refer"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBaseline="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ref ID: 647-0946-224"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"/>
+                        <TextView
+                            android:id="@+id/tv_ulimited_rch"
+                            android:layout_below="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unlimited Recharge"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_marginTop="10sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBaseline="@+id/tv_ulimited_rch"
+                            android:layout_below="@+id/tv_refer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nov 29,2021"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@android:color/black"
+                            android:textSize="15dp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+                        <View
+                            android:layout_marginLeft="10sp"
+                            android:layout_marginRight="10sp"
+                            android:layout_marginTop="50sp"
+                            android:layout_below="@+id/tv_update_bal"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/blackk" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:layout_marginRight="20sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="50sp"
+                        android:id="@+id/btn_getbil"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#018d42"
+                        app:backgroundTint="@null"
+                        android:text="GO TO WALLET" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

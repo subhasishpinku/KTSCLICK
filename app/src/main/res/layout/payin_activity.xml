@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv">
+    <ScrollView android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="0dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/lv"
+                            android:background="@color/carview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/Img"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_marginLeft="20sp"
+                                    android:background="@drawable/ic_arrow_circle_left" />
+                                <!--                    android:background="@drawable/dth"-->
+                                <TextView
+                                    android:id="@+id/tv_nmaebrand"
+                                    android:layout_marginLeft="10sp"
+                                    android:text="Add Payment"
+                                    android:layout_marginTop="5sp"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:layout_alignBaseline="@+id/Img"
+                                    android:layout_toRightOf="@+id/Img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:id="@+id/balance"
+                                    android:layout_below="@+id/tv_nmaebrand"
+                                    android:text="Wallet: 22.53"
+                                    android:layout_marginTop="2sp"
+                                    android:textColor="@color/white"
+                                    android:drawableLeft="@drawable/rupeess"
+                                    android:textSize="15sp"
+                                    android:layout_alignBaseline="@+id/Img"
+                                    android:layout_toRightOf="@+id/Img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <ImageView
+                                    android:id="@+id/Img2"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginRight="20sp"
+                                    android:background="@drawable/ic_cancel_second"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/llv"
+                            android:layout_marginTop="20sp"
+                            android:layout_below="@+id/lv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:layout_marginBottom="50sp"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/rcv"
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"/>
+                                <RadioGroup
+                                    android:id="@+id/rg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <RadioButton
+                                        android:id="@+id/upi"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="UPI"
+                                        android:onClick="onRadioButtonClicked"/>
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+                                    <RadioButton
+                                        android:id="@+id/cash"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cash"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+                                    <RadioButton
+                                        android:id="@+id/cheqe"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cheque"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+
+                                    <RadioButton
+                                        android:id="@+id/imps"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="IMPS"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+                                    <RadioButton
+                                        android:id="@+id/gpay"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Google Pay"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+                                    <RadioButton
+                                        android:id="@+id/ppay"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Phone Pay"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+                                    <RadioButton
+                                        android:id="@+id/rtgs"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="RTGS"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+                                    <RadioButton
+                                        android:id="@+id/creditcard"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Credit Card"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+
+                                    <RadioButton
+                                        android:id="@+id/debitcard"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Debit Card"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+
+                                    <RadioButton
+                                        android:id="@+id/netbanking"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Net Banking"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+                                    <RadioButton
+                                        android:id="@+id/neft"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="NEFT"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+                                    <RadioButton
+                                        android:id="@+id/transfer"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Transfer"
+                                        android:onClick="onRadioButtonClicked"/>
+
+                                    <View
+                                        android:layout_marginTop="15sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:background="@color/blackk" />
+                                </RadioGroup>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:background="#eae9e7"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        <TextView-->
+<!--            android:id="@+id/tv_p"-->
+<!--            android:text=""-->
+<!--            android:layout_marginTop="15sp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_marginLeft="10sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+        <EditText
+            android:id="@+id/ed_amount"
+            android:hint="Enter Amount"
+            android:layout_marginTop="5sp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/contatue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/ed_amount"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="200sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="5sp"
+            android:background="@drawable/orange_sqare"
+            android:text="Recharge"
+            android:textColor="#ffffff"
+            app:backgroundTint="@null" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/vvl"
+        android:background="#eae9e7"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="100sp">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<!--            <TextView-->
+<!--                android:id="@+id/tv_name"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:text="Name :"-->
+<!--                android:layout_marginTop="10sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/tv_name2"-->
+<!--                android:layout_toRightOf="@id/tv_name"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:text="Arobind Rao"-->
+<!--                android:layout_marginTop="10sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="12sp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+            <RelativeLayout
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/faildId"
+                    android:layout_width="80sp"
+                    android:layout_height="30sp"
+                    android:background="#e98f17"
+                    android:text="Credit"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_transaction"
+                    android:drawableLeft="@drawable/rupe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/faildId"
+                    android:layout_marginLeft="150sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="5sp"
+                    android:text="Transaction: 1000.00"
+                    android:textColor="@color/blackck"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_mobileno"
+                android:layout_marginTop="5sp"
+                android:layout_below="@+id/rv"
+                android:layout_marginLeft="15dp"
+                android:text="Transations Date :"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_mobile_no"
+                android:layout_marginTop="5sp"
+                android:layout_toRightOf="@id/tv_mobileno"
+                android:layout_alignBaseline="@+id/tv_mobileno"
+                android:layout_marginLeft="10dp"
+                android:text="12/11"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_adher"
+                android:layout_marginTop="5sp"
+                android:layout_below="@+id/tv_mobileno"
+                android:layout_marginLeft="15dp"
+                android:text="Narration :"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_adher_no"
+                android:layout_marginTop="5sp"
+                android:layout_toRightOf="@id/tv_adher"
+                android:layout_alignBaseline="@+id/tv_adher"
+                android:layout_marginLeft="10dp"
+                android:text="AFT"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="0dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/lv"
+                    android:background="@color/carview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/Img"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="20sp"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"/>
+                        <!--                    android:background="@drawable/dth"-->
+
+                        <TextView
+                            android:id="@+id/tv_nmaebrand"
+                            android:layout_marginLeft="10sp"
+                            android:text="FASTag Recharge"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:layout_alignBaseline="@+id/Img"
+                            android:layout_toRightOf="@+id/Img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/balance"
+                            android:layout_below="@+id/tv_nmaebrand"
+                            android:text="Wallet: 22.53"
+                            android:layout_marginTop="2sp"
+                            android:textColor="@color/white"
+                            android:drawableLeft="@drawable/rupeess"
+                            android:textSize="15sp"
+                            android:layout_alignBaseline="@+id/Img"
+                            android:layout_toRightOf="@+id/Img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <ImageView
+                            android:id="@+id/Img2"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginRight="20sp"
+                            android:background="@drawable/ic_cancel"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/llv"
+                    android:background="#eae9e7"
+                    android:layout_marginTop="20sp"
+                    android:layout_below="@+id/lv"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="340sp">
+                    <RelativeLayout
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/tv_customer"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customer Details"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_amount"
+                            android:layout_below="@+id/tv_customer"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bill Amount"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_amountID"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_bill_amount"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_date"
+                            android:layout_below="@+id/tv_bill_amount"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bill Date"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_dateId"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_bill_date"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="30-12-2021"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_number"
+                            android:layout_below="@+id/tv_bill_date"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bill Number"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_numberID"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_bill_number"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NA"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_due"
+                            android:layout_below="@+id/tv_bill_number"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bill Due"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_dueID"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_bill_due"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NA"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_period"
+                            android:layout_below="@+id/tv_bill_due"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bill Period"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_bill_periodID"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_bill_period"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NA"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_payment_late"
+                            android:layout_below="@+id/tv_bill_period"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Late Payment Amount"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_payment_lateID"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_payment_late"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NA"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_ConvenienceFee"
+                            android:layout_below="@+id/tv_payment_late"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Convenience Fee"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_ConvenienceFeeID"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_ConvenienceFee"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NA"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Customer_Name"
+                            android:layout_below="@+id/tv_ConvenienceFee"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Customer Name"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Customer_NameID"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_Customer_Name"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NA"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Fastag_Balance"
+                            android:layout_below="@+id/tv_Customer_Name"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fastag Balance"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Fastag_BalanceID"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_Fastag_Balance"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NA"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_Maximum_Recharge"
+                            android:layout_below="@+id/tv_Fastag_Balance"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Maximum Recharge"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_Maximum_RechargeID"
+                            android:layout_marginRight="5sp"
+                            android:layout_alignBaseline="@+id/tv_Maximum_Recharge"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NA"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_below="@+id/llv"
+                    android:layout_marginTop="20sp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="320sp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_bill_amountshow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bill Amount To Pay"
+                            android:layout_marginLeft="20sp"
+                            android:textColor="@color/blackck"
+                            android:textSize="18dp"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_marginTop="40sp"
+                            android:id="@+id/boothId"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/mobileno"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableTint="@color/carview"
+                                android:singleLine="true"
+                                android:hint="Bill Amount"
+                                android:inputType="text" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp"
+                android:text="Save details for future bil payments"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        </LinearLayout>
+        <Button
+            android:layout_gravity="bottom"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginTop="50sp"
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            app:backgroundTint="@null"
+            android:background="@drawable/roundedbutton"
+            android:text="PAY" />
+    </RelativeLayout>
+</RelativeLayout>

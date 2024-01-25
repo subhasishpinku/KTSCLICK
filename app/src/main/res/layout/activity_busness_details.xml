@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            card_view:ignore="RtlCompat" />
+        <LinearLayout
+            android:layout_marginTop="60sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Co-ordinator Name"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"
+                android:textSize="15sp"
+                />
+            <EditText
+                android:layout_marginTop="5sp"
+                android:id="@+id/codinatorId"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:inputType="textWebEmailAddress"
+                android:paddingLeft="5sp"
+                android:hint="  Enter Co-ordinator Name"
+                android:background="@drawable/rounded_edittext"/>
+            <LinearLayout
+                android:layout_marginTop="5sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_marginRight="10sp"
+                    android:id="@+id/ownerrentId"
+                    android:gravity="left"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Office Space"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        />
+                    <RadioButton
+                        android:id="@+id/ownerId"
+                        android:layout_weight="1"
+                        android:layout_marginTop="0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Owner"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/rentId"
+                        android:layout_weight="1"
+                        android:layout_marginTop="0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rented"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bussiness/Ownership"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"
+                android:textSize="15sp"
+                />
+            <LinearLayout
+                android:background="@drawable/rounded_edittext"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="45sp">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal"
+                    android:layout_height="30dp">
+                    <Spinner
+                        android:id="@+id/sp1"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/image" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="5sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/iataId"
+                    android:gravity="left"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IATA Registered "
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        />
+                    <RadioButton
+                        android:id="@+id/yesId"
+                        android:layout_weight="1"
+                        android:layout_marginTop="0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/noId"
+                        android:layout_weight="1"
+                        android:layout_marginTop="0sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"/>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+<!--            <TextView-->
+<!--                android:layout_marginTop="5sp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Enter Name"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:textSize="18sp"-->
+<!--                />-->
+<!--            <EditText-->
+<!--                android:layout_marginTop="5sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginLeft="10sp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50sp"-->
+<!--                android:inputType="textWebEmailAddress"-->
+<!--                android:paddingLeft="5sp"-->
+<!--                android:hint=" Enter Name"-->
+<!--                android:background="@drawable/rounded_edittext"/>-->
+            <TextView
+                android:layout_marginTop="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shop Address Proof"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"
+                android:textSize="15sp"
+                />
+            <LinearLayout
+                android:layout_marginTop="5sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0sp"
+                android:layout_marginRight="0sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/turnoverId"
+                    android:layout_marginRight="10sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:layout_marginLeft="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:inputType="textWebEmailAddress"
+                    android:paddingLeft="5sp"
+                    android:hint=" Enter turnover"
+                    android:background="@drawable/rounded_edittext"/>
+<!--                <Button-->
+<!--                    android:layout_marginRight="10sp"-->
+<!--                    android:layout_marginLeft="10sp"-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:layout_marginTop="5sp"-->
+<!--                    android:layout_width="100sp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    app:backgroundTint="@null"-->
+<!--                    android:background="@drawable/roundedbutton"-->
+<!--                    android:text="View" />-->
+
+            </LinearLayout>
+<!--            <EditText-->
+<!--                android:id="@+id/securitId"-->
+<!--                android:layout_marginTop="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginLeft="10sp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50sp"-->
+<!--                android:inputType="textWebEmailAddress"-->
+<!--                android:paddingLeft="5sp"-->
+<!--                android:hint=" Document securitization"-->
+<!--                android:background="@drawable/rounded_edittext"/>-->
+            <LinearLayout
+                android:background="@drawable/rounded_edittext"
+                android:layout_weight="1"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="45sp">
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal"
+                    android:layout_height="30dp">
+                    <Spinner
+                        android:id="@+id/sp2"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"/>
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/image" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <Button
+                android:layout_marginRight="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="5sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:id="@+id/nextId_agent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                app:backgroundTint="@null"
+                android:background="@drawable/roundedbutton"
+                android:text="Next" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

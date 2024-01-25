@@ -1,0 +1,2 @@
+rootProject.name = "kitsclick"
+include ':app'

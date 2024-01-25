@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_marginTop="5sp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:background="@drawable/card_view_shape">
+            <RelativeLayout
+                android:id="@+id/lv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical">
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow
+                        android:weightSum="3"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/trangaction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="name"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/trangaction_ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Transactionid"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="3"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/referenceid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Agency ID"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/referenceid_ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Referenceid"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="3"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/agencycode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Merchant TransactionId"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/agencycode_ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Agencycode"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="3"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/operatorname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Fp TransactionId"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/operatorname_ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Operatorname"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+
+                    <TableRow
+                        android:weightSum="3"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Service"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/number_ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Number"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="3"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/rechargedate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="BankRRN"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/rechargedate_ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Rechargedate"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="3"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/recharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Balance Amount"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/recharge_ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Recharge"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="3"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/amt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Request TransactionTime"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/amt_ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Amt"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                    <TableRow
+                        android:weightSum="3"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginRight="10sp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="TransactionAmount"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text=":"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                        <TextView
+                            android:id="@+id/status_ID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="15sp"
+                            android:text="Status"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/black" />
+                    </TableRow>
+                </TableLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+<!--<androidx.cardview.widget.CardView-->
+<!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+<!--android:layout_width="match_parent"-->
+<!--android:id="@+id/cardId"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_margin="10dp"-->
+<!--app:cardCornerRadius="10dp"-->
+<!--card_view:cardBackgroundColor="@android:color/white">-->
+<!--<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="wrap_content">-->
+<!--    <TableRow-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/trangaction"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Transactionid"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text=":"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/trangaction_ID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Transactionid"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </TableRow>-->
+<!--    <TableRow-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/referenceid"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="reference"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text=":"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/referenceid_ID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Referenceid"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </TableRow>-->
+<!--    <TableRow-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/agencycode"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Agencycode"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text=":"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/agencycode_ID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Agencycode"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </TableRow>-->
+<!--    <TableRow-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/operatorname"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Operator"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text=":"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/operatorname_ID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Operatorname"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </TableRow>-->
+
+<!--    <TableRow-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/number"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Number"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text=":"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/number_ID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Number"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </TableRow>-->
+<!--    <TableRow-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/rechargedate"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Date"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text=":"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/rechargedate_ID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Rechargedate"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </TableRow>-->
+<!--    <TableRow-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/recharge"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Recharge"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text=":"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/recharge_ID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Recharge"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </TableRow>-->
+<!--    <TableRow-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/amt"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Amt"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text=":"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/amt_ID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Amt"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </TableRow>-->
+<!--    <TableRow-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginTop="10sp"-->
+<!--        android:layout_marginLeft="10sp"-->
+<!--        android:layout_marginRight="10sp"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/status"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="status"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text=":"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/status_ID"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:text="Status"-->
+<!--            android:layout_marginTop="5sp"-->
+<!--            android:textColor="@color/black" />-->
+<!--    </TableRow>-->
+<!--</TableLayout>-->
+
+<!--</androidx.cardview.widget.CardView>-->

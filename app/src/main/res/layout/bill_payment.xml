@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MobileRechargeActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="1dp"
+            app:cardCornerRadius="0dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardMaxElevation="1dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/lv"
+                    android:background="@color/carview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/Img"
+                            android:layout_marginTop="10sp"
+                            android:layout_marginLeft="20sp"
+                            android:background="@drawable/ic_bill_payments"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"/>
+                        <TextView
+                            android:id="@+id/tv"
+                            android:layout_marginLeft="10sp"
+                            android:text="Bill Payments"
+                            android:layout_marginTop="5sp"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:layout_alignBaseline="@+id/Img"
+                            android:layout_toRightOf="@+id/Img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:id="@+id/balance"
+                            android:layout_marginLeft="10sp"
+                            android:layout_below="@+id/tv"
+                            android:text="Wallet: 22.53"
+                            android:layout_marginTop="2sp"
+                            android:textColor="@color/white"
+                            android:drawableLeft="@drawable/rupeess"
+                            android:textSize="15sp"
+                            android:layout_alignBaseline="@+id/Img"
+                            android:layout_toRightOf="@+id/Img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <ImageView
+                            android:id="@+id/Img1"
+                            android:visibility="visible"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:background="@drawable/ic_alerts"
+                            android:layout_width="30sp"
+                            android:layout_marginRight="70sp"
+                            android:layout_height="30sp"/>
+                        <ImageView
+                            android:id="@+id/Img2"
+                            android:layout_marginRight="20sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5sp"
+                            android:background="@drawable/ic_cancel"
+                            android:layout_width="30sp"
+                            android:layout_height="30sp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lvv"
+                    android:layout_marginTop="10sp"
+                    android:layout_below="@+id/lv"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:padding="10dp"
+                        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"
+                        android:background="@drawable/buttonsqar"
+                        android:text="Report" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50sp"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null"
+                        android:background="@drawable/buttonsqar"
+                        android:text="Complaints" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="10sp"
+                    android:layout_below="@+id/lvv"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:layout_marginTop="5sp"
+                        android:clipToPadding="false"
+                        android:id="@+id/bill_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ProgressBar
+                        android:layout_gravity="center"
+                        android:id="@+id/progressBar_cyclic"
+                        android:indeterminateTint="@color/carview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="50dp"
+                        android:minWidth="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                    <GridView
+                        android:visibility="gone"
+                        android:id="@+id/gridView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

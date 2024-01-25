@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv">
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="1dp"
+                    app:cardCornerRadius="0dp"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardMaxElevation="1dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/lv"
+                            android:background="@color/carview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/Img"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"
+                                    android:layout_marginLeft="20sp"
+                                    android:background="@drawable/ic_arrow_circle_left" />
+                                <!--                    android:background="@drawable/dth"-->
+                                <TextView
+                                    android:id="@+id/tv_nmaebrand"
+                                    android:layout_marginLeft="10sp"
+                                    android:text="Add Payment"
+                                    android:layout_marginTop="5sp"
+                                    android:textColor="@color/white"
+                                    android:textSize="15sp"
+                                    android:layout_alignBaseline="@+id/Img"
+                                    android:layout_toRightOf="@+id/Img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <TextView
+                                    android:id="@+id/balance"
+                                    android:layout_below="@+id/tv_nmaebrand"
+                                    android:text="Wallet: 22.53"
+                                    android:layout_marginTop="2sp"
+                                    android:textColor="@color/white"
+                                    android:drawableLeft="@drawable/rupeess"
+                                    android:textSize="15sp"
+                                    android:layout_alignBaseline="@+id/Img"
+                                    android:layout_toRightOf="@+id/Img"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <ImageView
+                                    android:id="@+id/Img3"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginRight="80sp"
+                                    android:background="@drawable/ic_print_black_48dp"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"/>
+
+                                <ImageView
+                                    android:id="@+id/Img2"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginRight="20sp"
+                                    android:background="@drawable/ic_cancel_second"
+                                    android:layout_width="30sp"
+                                    android:layout_height="30sp"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/llv"
+                            android:layout_marginTop="20sp"
+                            android:layout_below="@+id/lv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <RelativeLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:drawableLeft="@drawable/ic_baseline_create_24"
+                                    android:id="@+id/tv_addpayment"
+                                    android:text="Add Payment"
+                                    android:layout_marginTop="5sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <TextView
+                                    android:id="@+id/agent"
+                                    android:visibility="gone"
+                                    android:layout_below="@+id/tv_addpayment"
+                                    android:drawableRight="@drawable/ic_baseline_star_24"
+                                    android:text="Agent"
+                                    android:layout_marginTop="10sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:visibility="gone"
+                                    android:layout_below="@+id/agent"
+                                    android:id="@+id/agentselect"
+                                    android:layout_marginTop="10sp"
+                                    style="@style/CustomDropDownTilStyle"
+                                    app:boxBackgroundColor="@color/white"
+                                    android:layout_weight="1"
+                                    android:hint="Select Agent">
+                                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                        android:id="@+id/agentselectId"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:focusable="false"
+                                        android:inputType="none" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_bank"
+                                    android:layout_below="@+id/agentselect"
+                                    android:drawableRight="@drawable/ic_baseline_star_24"
+                                    android:text="RECIVER BANK"
+                                    android:layout_marginTop="10sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_below="@+id/tv_bank"
+                                    android:id="@+id/tv_reciver"
+                                    android:layout_marginTop="10sp"
+                                    style="@style/CustomDropDownTilStyle"
+                                    app:boxBackgroundColor="@color/white"
+                                    android:layout_weight="1"
+                                    android:hint="Select">
+                                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                        android:id="@+id/bankId"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:focusable="false"
+                                        android:inputType="none" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <TextView
+                                    android:id="@+id/tv_method"
+                                    android:layout_below="@+id/tv_reciver"
+                                    android:drawableRight="@drawable/ic_baseline_star_24"
+                                    android:text="METHOD"
+                                    android:layout_marginTop="10sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_below="@+id/tv_method"
+                                    android:id="@+id/tv_transfer"
+                                    android:layout_marginTop="10sp"
+                                    style="@style/CustomDropDownTilStyle"
+                                    app:boxBackgroundColor="@color/white"
+                                    android:layout_weight="1"
+                                    android:hint="Transfer">
+                                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                                        android:id="@+id/tv_transferID"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:focusable="false"
+                                        android:inputType="none" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <TextView
+                                    android:id="@+id/tv_depositbank"
+                                    android:layout_below="@+id/tv_transfer"
+                                    android:drawableRight="@drawable/ic_baseline_star_24"
+                                    android:text="DEPOSIT BANK"
+                                    android:layout_marginTop="10sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginTop="10sp"
+                                    android:id="@+id/tv_deposit"
+                                    android:layout_below="@+id/tv_depositbank"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tv_depositId"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableTint="@color/carview"
+                                        android:singleLine="true"
+                                        android:hint="DEPOSIT BANK"
+                                        android:inputType="text" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_bankreferancenumber"
+                                    android:layout_below="@+id/tv_deposit"
+                                    android:drawableRight="@drawable/ic_baseline_star_24"
+                                    android:text="Bank Reference Number"
+                                    android:layout_marginTop="10sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginTop="10sp"
+                                    android:id="@+id/tv_bankresferance"
+                                    android:layout_below="@+id/tv_bankreferancenumber"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tv_bankresferanceID"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableTint="@color/carview"
+                                        android:singleLine="true"
+                                        android:hint="Bank Reference Number"
+                                        android:inputType="text" />
+
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_ifccode"
+                                    android:layout_below="@+id/tv_bankresferance"
+                                    android:drawableRight="@drawable/ic_baseline_star_24"
+                                    android:text="IFC CODE"
+                                    android:layout_marginTop="10sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginTop="10sp"
+                                    android:id="@+id/tv_ifccodee"
+                                    android:layout_below="@+id/tv_ifccode"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tv_ifccodeID"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableTint="@color/carview"
+                                        android:singleLine="true"
+                                        android:hint="IFC CODE"
+                                        android:inputType="text" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/rv"
+                                    android:layout_marginTop="5sp"
+                                    android:layout_below="@+id/tv_ifccodee"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    tools:ignore="DuplicateIds">
+                                    <ImageView
+                                        android:id="@+id/Imgm1"
+                                        android:layout_marginRight="80sp"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="10sp"
+                                        android:layout_width="30sp"
+                                        android:layout_height="30sp"
+                                        android:background="@drawable/ic_baseline_camera_alt_24" />
+                                    <ImageView
+                                        android:id="@+id/Imgm2"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_marginTop="10sp"
+                                        android:layout_width="30sp"
+                                        android:layout_height="30sp"
+                                        android:layout_marginRight="20sp"
+                                        android:background="@drawable/ic_baseline_image_24" />
+
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:id="@+id/tv_amount"
+                                    android:layout_below="@+id/rv"
+                                    android:drawableRight="@drawable/ic_baseline_star_24"
+                                    android:text="Amount"
+                                    android:layout_marginTop="5sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginTop="10sp"
+                                    android:id="@+id/tv_amounts"
+                                    android:layout_below="@+id/tv_amount"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tv_amountId"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableTint="@color/carview"
+                                        android:singleLine="true"
+                                        android:hint="Amount"
+                                        android:inputType="text" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <TextView
+                                    android:id="@+id/tv_remarks"
+                                    android:layout_below="@+id/tv_amounts"
+                                    android:drawableRight="@drawable/ic_baseline_star_24"
+                                    android:text="Remarks"
+                                    android:layout_marginTop="10sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"
+                                    android:layout_marginLeft="15sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_marginTop="10sp"
+                                    android:id="@+id/tv_remarkss"
+                                    android:layout_below="@+id/tv_remarks"
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/tv_remarkssID"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableTint="@color/carview"
+                                        android:singleLine="true"
+                                        android:hint="Remarks"
+                                        android:inputType="text" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="10sp"
+                    android:id="@+id/btn_payrecopt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/roundedbutton"
+                    android:text="Submit" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

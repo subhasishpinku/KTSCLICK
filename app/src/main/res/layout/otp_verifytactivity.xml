@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:ignore="RtlCompat"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50sp"
+            android:layout_gravity="end"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:background="@drawable/ic_baseline_textsms_24"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Enter OTP"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:visibility="gone"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="A one time password has been sent to your register mobile no."
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16sp"/>
+<!--        <com.goodiebag.pinview.pinview-->
+<!--            android:id="@+id/pinview1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:cursorVisible="false"-->
+<!--            app:forceKeyboard="false"-->
+<!--            app:hint=""-->
+<!--            app:textSize="15sp"-->
+<!--            app:inputType="number"-->
+<!--            app:password="false"-->
+<!--            app:pinHeight="60dp"-->
+<!--            app:pinLength="4"-->
+<!--            app:pinWidth="60dp"/>-->
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <EditText
+                android:id="@+id/edit_one_mpin"
+                android:imeOptions="actionNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_et_bg_border"
+                android:fontFamily="@font/calibri_normal"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textColor="@color/colorGrey1"
+                android:textSize="@dimen/text_view_13" />
+
+            <EditText
+                android:id="@+id/edit_two_mpin"
+                android:imeOptions="actionNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_et_bg_border"
+                android:fontFamily="@font/calibri_normal"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textColor="@color/colorGrey1"
+                android:textSize="@dimen/text_view_13" />
+
+            <EditText
+                android:id="@+id/edit_three_mpin"
+                android:imeOptions="actionNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_et_bg_border"
+                android:fontFamily="@font/calibri_normal"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textColor="@color/colorGrey1"
+                android:textSize="@dimen/text_view_13" />
+
+            <EditText
+                android:id="@+id/edit_four_mpin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_et_bg_border"
+                android:fontFamily="@font/calibri_normal"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textColor="@color/colorGrey1"
+                android:textSize="@dimen/text_view_13" />
+            <EditText
+                android:id="@+id/edit_five_mpin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_et_bg_border"
+                android:fontFamily="@font/calibri_normal"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textColor="@color/colorGrey1"
+                android:textSize="@dimen/text_view_13" />
+            <EditText
+                android:id="@+id/edit_six_mpin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/xml_et_bg_border"
+                android:fontFamily="@font/calibri_normal"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:textColor="@color/colorGrey1"
+                android:textSize="@dimen/text_view_13" />
+        </LinearLayout>
+        <Button
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="5sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:id="@+id/subId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            app:backgroundTint="@null"
+            android:background="@drawable/roundedbutton"
+            android:text="Submit" />
+    </LinearLayout>
+
+
+</RelativeLayout>

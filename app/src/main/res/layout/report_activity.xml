@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eceaeb"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/lv"
+            android:background="@color/carview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/Img"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="20sp"
+                    android:background="@drawable/close"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv"
+            android:layout_below="@+id/lv"
+            android:text="Report"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:id="@+id/lvv"
+            android:weightSum="3"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+<!--            <TextView-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginLeft="5sp"-->
+<!--                android:layout_marginRight="5sp"-->
+<!--                android:layout_marginTop="10sp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50sp"-->
+<!--                android:padding="10dp"-->
+<!--                android:drawableLeft="@drawable/ic_baseline_date_range_24"-->
+<!--                android:textColor="#ffffff"-->
+<!--                app:backgroundTint="@null"-->
+<!--                android:background="@drawable/drawablesqare"-->
+<!--                android:text="Date" />-->
+<!--            <TextView-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawableLeft="@drawable/ic_baseline_date_range_24"-->
+<!--                android:layout_marginRight="5sp"-->
+<!--                android:layout_marginLeft="5sp"-->
+<!--                android:layout_marginTop="10sp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50sp"-->
+<!--                android:padding="10dp"-->
+<!--                android:textColor="#ffffff"-->
+<!--                app:backgroundTint="@null"-->
+<!--                android:background="@drawable/drawablesqare"-->
+<!--                android:text="Date" />-->
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/linerridues"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3.2">
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal"
+                    android:layout_height="25dp">
+                    <TextView
+                        android:id="@+id/f_date"
+                        android:layout_marginRight="30sp"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:text="From Date"
+                        android:textColor="@color/carview"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"/>
+
+                    <ImageView
+                        android:id="@+id/ff_date"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_baseline_date_range_24" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal"
+                    android:layout_height="25dp">
+                    <TextView
+                        android:id="@+id/t_date"
+                        android:layout_marginRight="30sp"
+                        android:layout_centerVertical="true"
+                        android:spinnerMode="dropdown"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:text="To Date"
+                        android:textColor="@color/carview"
+                        android:background="@android:color/transparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"/>
+
+                    <ImageView
+                        android:id="@+id/tt_date"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_baseline_date_range_24" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:visibility="visible"
+                        android:id="@+id/searchID"
+                        android:layout_width="32dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        style="@style/DefaultButton"
+                        android:background="@drawable/ic_search_black_24dp" />
+                    <Button
+                        android:visibility="gone"
+                        android:id="@+id/searchIDD"
+                        android:layout_width="32dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="0dp"
+                        style="@style/DefaultButton"
+                        android:background="@drawable/ic_search_black_24dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_below="@+id/lvv"
+            android:id="@+id/mobiledata"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            style="@style/CustomDropDownTilStyle"
+            app:boxBackgroundColor="@color/white"
+            android:layout_weight="1"
+            android:hint="Mobile">
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/mobiledataview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/lvv1"-->
+<!--            android:layout_below="@+id/mobiledata"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+<!--            <Button-->
+<!--                android:layout_marginRight="100sp"-->
+<!--                android:layout_marginLeft="100sp"-->
+<!--                android:layout_marginBottom="5sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="10sp"-->
+<!--                android:id="@+id/loginmain"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="10dp"-->
+<!--                android:textColor="#ffffff"-->
+<!--                app:backgroundTint="@null"-->
+<!--                android:background="@drawable/drawablesqare"-->
+<!--                android:text="Search" />-->
+
+
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/lvv2"
+            android:layout_below="@+id/mobiledata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lvv3"
+            android:layout_marginBottom="60sp"
+            android:layout_below="@+id/lvv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvv"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:text="title_home"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/black"
+        app:itemTextColor="@android:color/black"
+        app:menu="@menu/navigation2" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
